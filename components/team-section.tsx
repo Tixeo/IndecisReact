@@ -7,15 +7,15 @@ import Link from "next/link"
 const creators = [
   {
     name: "Indécis",
-    role: "Co-founder",
+    role: "Founder",
     image: "/team/creator1.png",
-    twitter: "https://twitter.com/",
+    twitter: "https://twitter.com/RatioByLeteck",
     github: "https://github.com/",
   },
   {
-    name: "Creator 2",
-    role: "Co-founder",
-    image: "/team/creator2.png",
+    name: "Tix",
+    role: "Web Developer",
+    image: "https://images-ext-1.discordapp.net/external/e0TR4wnXma-ZAPqnmggSeUrXxpkNcMGeCVrWJxQFME0/%3Fsize%3D512/https/cdn.discordapp.com/avatars/523928544859127838/2fffb1fc8ebadb63f1969eb7ec3988c4.webp?format=webp",
     twitter: "https://twitter.com/",
     github: "https://github.com/",
   },
@@ -27,7 +27,6 @@ const creators = [
     github: "https://github.com/",
   },
 ]
-
 export function TeamSection() {
   return (
     <section className="py-20 md:py-32">
