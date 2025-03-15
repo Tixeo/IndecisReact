@@ -26,6 +26,13 @@ const creators = [
     twitter: "https://twitter.com/",
     github: "https://github.com/",
   },
+  {
+    name: "Creator 4",
+    role: "Co-founder",
+    image: "/team/creator4.png",
+    twitter: "https://twitter.com/",
+    github: "https://github.com/",
+  },
 ]
 export function TeamSection() {
   return (
@@ -40,7 +47,7 @@ export function TeamSection() {
           </p>
         </div>
         
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="flex flex-wrap justify-center items-center gap-10 mt-12">
           {creators.map((creator, index) => (
             <TeamMember key={index} creator={creator} index={index} />
           ))}
@@ -53,7 +60,7 @@ export function TeamSection() {
 function TeamMember({ creator, index }: { creator: typeof creators[0], index: number }) {
   return (
     <motion.div 
-      className="group relative overflow-hidden rounded-xl bg-background p-6 transition-all"
+      className="group relative overflow-hidden rounded-xl bg-background p-6 transition-all max-w-[300px]"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
